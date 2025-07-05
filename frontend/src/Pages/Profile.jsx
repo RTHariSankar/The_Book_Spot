@@ -153,23 +153,6 @@ const Profile = () => {
     }
   };
 
-  // const handleDelete = async (id) => {
-
-  //   await axios
-  //     .delete(`${DELETE_USER_PROFILE}/${id}`)
-  //     .then((response) => {
-  //       if (response.data.message === "User deleted successfully") {
-  //         alert('Account deleted successfully');
-  //         navigate('/')
-  //       } else {
-  //         alert(response.data.message);
-  //       }
-  //     })
-  //     .catch((error) => {
-  //       console.log(error.response.data);
-  //     });
-  // };
-
   return (
     <div>
       <Navbar_User />

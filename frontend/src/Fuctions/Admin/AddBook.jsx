@@ -82,7 +82,7 @@ const AddBook = () => {
         }
       }
     } catch (error) {
-      console.log(error);
+      console.error(error);
       alert(error.response.data.message);
     } finally {
       bookReset();

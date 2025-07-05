@@ -1,49 +1,28 @@
-// DEVELOPMENT APIS
+// src/config/api.js
 
-const PROFILE_API = "http://localhost:5000/api/userInfo";
-const REGISTER_API = "http://localhost:5000/api/register";
-const LOGIN_API = "http://localhost:5000/api/login";
-const PROFILE_UPDATE_API = "http://localhost:5000/api/userUpdate";
-const BOOK_REQUEST_API = "http://localhost:5000/api/userRequest";
-const ADD_BOOK_API = "http://localhost:5000/api/addBook";
-const ALL_BOOKS_API = "http://localhost:5000/api/bookDetails";
-const DELETE_BOOK_API = "http://localhost:5000/api/bookDelete";
-const BOOK_DETAILS_API = "http://localhost:5000/api/bookDetails";
-const UPDATE_BOOK_API = "http://localhost:5000/api/bookUpdate";
-const ALL_USERS_API = "http://localhost:5000/api/allUsers";
-const DELETE_USER = "http://localhost:5000/api/userDelete";
-const DELETE_REQUEST_API = "http://localhost:5000/api/requestDelete";
-const REQUEST_STATUS_UPDATE_API =
-  "http://localhost:5000/api/requestStatusUpdate";
-const USER_COMMET_API = "http://localhost:5000/api/userComments";
-const USER_COMMENT_DELETE_API = "http://localhost:5000/api/userComments";
-const USER_COMMENT_UPDATE_API = "http://localhost:5000/api/updateComment";
-const BUY_RENT_API = "http://localhost:5000/api/userBookInfo";
-const HOME_BOOK_API = "http://localhost:5000/api/homeBookDetails"
+const BASE_URL = process.env.REACT_APP_API_BASE;
 
-// PRODUCTIOM APIS
+const PROFILE_API = `${BASE_URL}/userInfo`;
+const REGISTER_API = `${BASE_URL}/register`;
+const LOGIN_API = `${BASE_URL}/login`;
+const PROFILE_UPDATE_API = `${BASE_URL}/userUpdate`;
+const BOOK_REQUEST_API = `${BASE_URL}/userRequest`;
+const ADD_BOOK_API = `${BASE_URL}/addBook`;
+const ALL_BOOKS_API = `${BASE_URL}/bookDetails`;
+const DELETE_BOOK_API = `${BASE_URL}/bookDelete`;
+const BOOK_DETAILS_API = `${BASE_URL}/bookDetails`;
+const UPDATE_BOOK_API = `${BASE_URL}/bookUpdate`;
+const ALL_USERS_API = `${BASE_URL}/allUsers`;
+const DELETE_USER = `${BASE_URL}/userDelete`;
+const DELETE_REQUEST_API = `${BASE_URL}/requestDelete`;
+const REQUEST_STATUS_UPDATE_API = `${BASE_URL}/requestStatusUpdate`;
+const USER_COMMET_API = `${BASE_URL}/userComments`;
+const USER_COMMENT_DELETE_API = `${BASE_URL}/userComments`;
+const USER_COMMENT_UPDATE_API = `${BASE_URL}/updateComment`;
+const BUY_RENT_API = `${BASE_URL}/userBookInfo`;
+const HOME_BOOK_API = `${BASE_URL}/homeBookDetails`;
 
-// const PROFILE_API = "/api/userInfo";
-// const REGISTER_API = "/api/register";
-// const LOGIN_API = "/api/login";
-// const PROFILE_UPDATE_API = "/api/userUpdate";
-// const BOOK_REQUEST_API = "/api/userRequest";
-// const ADD_BOOK_API = "/api/addBook";
-// const BOOK_DETAILS_API = "/api/bookDetails";
-// const ALL_BOOKS_API = "/api/bookDetails";
-// const DELETE_BOOK_API = "/api/bookDelete";
-// const UPDATE_BOOK_API = "/api/bookUpdate";
-// const ALL_USERS_API = "/api/allUsers";
-// const DELETE_USER = "/api/userDelete";
-// const DELETE_REQUEST_API = "/api/requestDelete";
-// const REQUEST_STATUS_UPDATE_API = "/api/requestStatusUpdate";
-// const USER_COMMET_API = "/api/userComments";
-// const USER_COMMENT_DELETE_API = "/api/userComments";
-// const USER_COMMENT_UPDATE_API = "/api/updateComment";
-// const BUY_RENT_API = "/api/userBookInfo";
-// const HOME_BOOK_API = "/api/homeBookDetails";
-
-module.exports = {
+export {
   PROFILE_API,
   REGISTER_API,
   LOGIN_API,

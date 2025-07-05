@@ -20,6 +20,13 @@
     #f3c6f1 90.85%
   );
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  min-height: 100vh;
+  overflow-y: auto;
+}
 
 .card {
   background:rgba(255, 255, 255, 0.54);

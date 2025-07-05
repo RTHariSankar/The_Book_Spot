@@ -82,7 +82,6 @@ const Book_Request = () => {
         setModalMessage("Book request already made and under admin's scrutiny");
       } else {
         setModalMessage(response.data.message);
-        console.log(response.data.message);
       }
       // requestReset();
       // requestReset({
